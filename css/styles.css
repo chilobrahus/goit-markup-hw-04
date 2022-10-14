@@ -247,7 +247,13 @@
     
     .features-svg {
         display: flex;
-        column-gap: 30px;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
     }
     
     .svg-list {
@@ -292,9 +298,6 @@
     .box {
         padding-top: 30px;
         padding-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
     }
     
     .team-list {
@@ -317,6 +320,7 @@
         line-height: 1.18;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-bottom: 10px;
     }
     
     .team-position {
@@ -373,7 +377,7 @@
         column-gap: 30px;
     }
     
-    .client-point {
+    .client-list-link {
         width: 170px;
         height: 92px;
         border: 1px solid #AFB1B8;
@@ -381,6 +385,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    
+    .client-list-link:hover,
+    .client-list-link:focus {
+        border: 1px solid #2196F3;
+        border-radius: 4px;
+    }
+    
+    .client-list-icon {
+        fill: #AFB1B8;
+    }
+    
+    .client-list-link:hover .client-list-icon,
+    .client-list-link:focus .client-list-icon {
+        fill: #2196F3;
     }
     /*_____________ _____portfolio _______________________*/
     
@@ -423,7 +442,7 @@
         padding-top: 6px;
         padding-bottom: 6px;
     }
-    /* examples */
+    /*_______________ examples____________________ */
     
     .examples-box {
         padding-left: 24px;
@@ -438,20 +457,21 @@
         border-bottom: 1px solid #EEEEEE;
     }
     
-    .examples-card {
-        width: 370px;
-        box-sizing: border-box;
-    }
-    
-    .examples-card:hover {
-        border: 1px solid #EEEEEE;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-    
     .examples {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+    }
+    
+    .examples-link {
+        width: 370px;
+        display: block;
+        text-decoration: none;
+    }
+    
+    .examples-link:hover {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
     
     .examples-title {
@@ -459,6 +479,7 @@
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
+        color: var(--primary-text-color);
     }
     
     .examples-text {
